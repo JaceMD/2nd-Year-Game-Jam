@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BedManagerScript.cs" />
+     <Compile Include="Assets\Scripts\BedScript.cs" />
      <Compile Include="Assets\Scripts\BedWatchScript.cs" />
      <Compile Include="Assets\Scripts\NunScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />

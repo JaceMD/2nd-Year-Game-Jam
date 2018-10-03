@@ -1,10 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\NunScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BedScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerScript.cs" Line="119" Column="2" />
-      <File FileName="Assets\Scripts\NunScript.cs" Line="14" Column="80" />
-      <File FileName="Assets\Scripts\BedWatchScript.cs" Line="39" Column="30" />
+      <File FileName="Assets\Scripts\PlayerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\NunScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BedWatchScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BedManagerScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BedScript.cs" Line="51" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
