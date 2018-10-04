@@ -22,6 +22,8 @@ public class NunScript : MonoBehaviour {
 
 	public GameObject bedWatch;
 
+	GameObject closestBed;
+
 	bool atPos1;
 	bool atPos2;
 	bool atPos3;
@@ -37,6 +39,9 @@ public class NunScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		closestBed = findClosestBed ();
+
 		if (heardNoise) {
 			investigateNoise (destination);
 		}
@@ -114,7 +119,39 @@ public class NunScript : MonoBehaviour {
 	IEnumerator bedGlance()											//Wait used for everytime the nun stops to check each bed
 	{
 		yield return new WaitForSeconds (1f);
+		if (closestBed != null) {
+			if (closestBed.GetComponent<BedScript> ().bedFilled) {
+				print ("Nun sees filled bed");
+			} else {
+				print ("NUN FINDS EMPTY BED");
+			}
+		}
 		bedWatch.GetComponent<BedWatchScript> ().nextBed ();
 		bedLooked = true;
 	}
+		
+	GameObject findClosestBed() 															//function that finds the closest bed and returns that object to the update
+	{
+		GameObject cBed = null;
+		GameObject[] bedList = GameObject.FindGameObjectsWithTag ("Bed");
+
+		for (int loop = 0; loop < bedList.Length; loop++) {
+			if (cBed == null) {
+				cBed = bedList [loop];
+			}
+
+			if (Vector3.Distance(transform.position, bedList[loop].transform.position) <= Vector3.Distance(transform.position, cBed.transform.position)) {
+				cBed = bedList[loop];
+			}
+		}
+
+		if (cBed != null) {														//returns null if the bed is out of the range of player
+			if (Mathf.Abs (transform.position.x - cBed.transform.position.x) > 4.8f || Mathf.Abs (transform.position.z - cBed.transform.position.z) > 5.7f) {
+				cBed = null;
+			}
+		}
+
+		return cBed;
+	}
+
 }

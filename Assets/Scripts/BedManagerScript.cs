@@ -41,14 +41,6 @@ public class BedManagerScript : MonoBehaviour {
 
 		itemPlaced_4 = itemPlacement;
 
-
-		print ("Player bed at "+ playerBed);
-		print ("Item 1 at "+itemPlaced_1);
-		print ("Item 2 at "+itemPlaced_2);
-		print ("Item 3 at "+ itemPlaced_3);
-		print ("Item 4 at "+itemPlaced_4);
-
-
 		GameObject.Find ("Bed_" + playerBed).GetComponent<BedScript>().setPlayerBed();
 		GameObject.Find ("Bed_" + itemPlaced_1).GetComponent<BedScript>().setItem_1();
 		GameObject.Find ("Bed_" + itemPlaced_2).GetComponent<BedScript>().setItem_2();

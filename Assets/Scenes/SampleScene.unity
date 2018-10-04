@@ -113,6 +113,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 11fb0180685a930409c0a07e6e85b73d, type: 2}
+--- !u!1 &96329192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 96329193}
+  - component: {fileID: 96329195}
+  - component: {fileID: 96329194}
+  m_Layer: 5
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &96329193
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96329192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+  m_Children: []
+  m_Father: {fileID: 1162538439}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 75, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &96329194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96329192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3301887, g: 0.3301887, b: 0.3301887, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d030ccfced5b1e347ace44684991d79a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &96329195
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 96329192}
+  m_CullTransparentMesh: 0
 --- !u!1 &131544106
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +195,7 @@ GameObject:
   - component: {fileID: 131544109}
   - component: {fileID: 131544108}
   - component: {fileID: 131544112}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_15
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -226,6 +295,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &138553613
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +314,7 @@ GameObject:
   - component: {fileID: 138553615}
   - component: {fileID: 138553618}
   - component: {fileID: 138553619}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_11
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -339,6 +414,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &141511425
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +433,7 @@ GameObject:
   - component: {fileID: 141511428}
   - component: {fileID: 141511427}
   - component: {fileID: 141511431}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_5
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -452,6 +533,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +564,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 0.88335323, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -531,7 +618,7 @@ GameObject:
   - component: {fileID: 209104048}
   - component: {fileID: 209104047}
   - component: {fileID: 209104051}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_13
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -631,6 +718,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &234354632
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +737,7 @@ GameObject:
   - component: {fileID: 234354635}
   - component: {fileID: 234354634}
   - component: {fileID: 234354638}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_12
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -744,6 +837,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &472054454
 GameObject:
   m_ObjectHideFlags: 0
@@ -881,7 +980,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -936,9 +1035,9 @@ GameObject:
   - component: {fileID: 543487193}
   - component: {fileID: 543487192}
   - component: {fileID: 543487194}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -983,8 +1082,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   search: {fileID: 478623915}
   hide: {fileID: 1791766523}
-  speed: 0.3
+  speed: 0.2
   nunAI: {fileID: 2004811973}
+  searchProg: {fileID: 1162538438}
 --- !u!4 &543487195
 Transform:
   m_ObjectHideFlags: 0
@@ -1012,7 +1112,7 @@ GameObject:
   - component: {fileID: 563582013}
   - component: {fileID: 563582012}
   - component: {fileID: 563582016}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_4
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -1112,6 +1212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &610750334
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,7 +1231,7 @@ GameObject:
   - component: {fileID: 610750336}
   - component: {fileID: 610750339}
   - component: {fileID: 610750340}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_9
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -1225,6 +1331,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &661931675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1443,7 +1555,7 @@ GameObject:
   - component: {fileID: 798347956}
   - component: {fileID: 798347955}
   - component: {fileID: 798347959}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_16
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -1543,6 +1655,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &841203527
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,7 +1911,7 @@ GameObject:
   - component: {fileID: 997780223}
   - component: {fileID: 997780222}
   - component: {fileID: 997780226}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_14
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -1893,6 +2011,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &1044465614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,7 +2030,7 @@ GameObject:
   - component: {fileID: 1044465617}
   - component: {fileID: 1044465616}
   - component: {fileID: 1044465620}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_1
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -2006,6 +2130,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &1144908170
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,7 +2149,7 @@ GameObject:
   - component: {fileID: 1144908173}
   - component: {fileID: 1144908172}
   - component: {fileID: 1144908176}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_6
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -2119,6 +2249,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &1161971070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,6 +2283,95 @@ Transform:
   m_Father: {fileID: 841203528}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1162538438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162538439}
+  - component: {fileID: 1162538442}
+  - component: {fileID: 1162538441}
+  - component: {fileID: 1162538440}
+  m_Layer: 5
+  m_Name: SearchProgress
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1162538439
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162538438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_Children:
+  - {fileID: 1498823805}
+  - {fileID: 96329193}
+  m_Father: {fileID: 1866956719}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -150}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1162538440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162538438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d717ac3bc3f4ab549ae122c8b4936586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBar: {fileID: 1498823805}
+  currentAmount: 0
+  speed: 1
+  player: {fileID: 543487191}
+  looking: 0
+  found: 0
+--- !u!114 &1162538441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162538438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9245283, g: 0.8242257, b: 0.8242257, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d030ccfced5b1e347ace44684991d79a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1162538442
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1162538438}
+  m_CullTransparentMesh: 0
 --- !u!1 &1210509887
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,7 +2413,7 @@ GameObject:
   - component: {fileID: 1283729951}
   - component: {fileID: 1283729950}
   - component: {fileID: 1283729954}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_2
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -2288,6 +2513,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &1340921769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2301,7 +2532,7 @@ GameObject:
   - component: {fileID: 1340921772}
   - component: {fileID: 1340921771}
   - component: {fileID: 1340921775}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_8
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -2401,6 +2632,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &1396206240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2410,7 +2647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1396206241}
   - component: {fileID: 1396206242}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpriteControl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2521,6 +2758,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1498823804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498823805}
+  - component: {fileID: 1498823807}
+  - component: {fileID: 1498823806}
+  m_Layer: 5
+  m_Name: LoadingBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1498823805
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498823804}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1162538439}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1498823806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498823804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.3160377, b: 0.3160377, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: d030ccfced5b1e347ace44684991d79a, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 0.431
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1498823807
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1498823804}
+  m_CullTransparentMesh: 0
 --- !u!1 &1501884328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2714,7 +3020,7 @@ GameObject:
   - component: {fileID: 1734274759}
   - component: {fileID: 1734274758}
   - component: {fileID: 1734274762}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_3
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -2814,6 +3120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &1744151270
 GameObject:
   m_ObjectHideFlags: 0
@@ -2827,7 +3139,7 @@ GameObject:
   - component: {fileID: 1744151272}
   - component: {fileID: 1744151275}
   - component: {fileID: 1744151276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_10
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -2927,6 +3239,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &1790186262
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,6 +3437,7 @@ RectTransform:
   m_Children:
   - {fileID: 478623914}
   - {fileID: 1791766522}
+  - {fileID: 1162538439}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3224,7 +3543,7 @@ GameObject:
   - component: {fileID: 1984305472}
   - component: {fileID: 1984305471}
   - component: {fileID: 1984305475}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Bed_7
   m_TagString: Bed
   m_Icon: {fileID: 0}
@@ -3324,6 +3643,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce46c47832eeb8b498c250db7f963692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  item_1: 0
+  item_2: 0
+  item_3: 0
+  item_4: 0
+  playerBed: 0
+  bedFilled: 0
 --- !u!1 &2004811973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,6 +3662,7 @@ GameObject:
   - component: {fileID: 2004811976}
   - component: {fileID: 2004811975}
   - component: {fileID: 2004811974}
+  - component: {fileID: 2004811980}
   m_Layer: 0
   m_Name: Nun
   m_TagString: Untagged
@@ -3449,6 +3775,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2004811980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2004811973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f347911c03bf2648ac19f8851b24488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewRadius: 5
+  viewAngle: 60
+  targetMask:
+    m_Bits: 512
+  obstacleMask:
+    m_Bits: 1024
 --- !u!1 &2006294584
 GameObject:
   m_ObjectHideFlags: 0

@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\BedWatchScript.cs" />
      <Compile Include="Assets\Scripts\NunScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\SearchProgress.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>D:/Apps/Unity/Projects/UnityAssignment5/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>

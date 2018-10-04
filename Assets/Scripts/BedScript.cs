@@ -4,25 +4,39 @@ using UnityEngine;
 
 public class BedScript : MonoBehaviour {
 
-	bool item_1;
-	bool item_2;
-	bool item_3;
-	bool item_4;
-	bool playerBed;
+	public bool item_1;
+	public bool item_2;
+	public bool item_3;
+	public bool item_4;
+	public bool playerBed;
+	public bool bedFilled;
+
+	bool start;
 
 
 	// Use this for initialization
 	void Start () {
+		start = false;
 		item_1 = false;
 		item_2 = false;
 		item_3 = false;
 		item_4 = false;
 		playerBed = false;
+		bedFilled = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (!start && !playerBed) {
+			start = true;
+		}
+
+		if (!start && playerBed) {
+			GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerScript> ().playerBegin (transform.position);
+			if (bedFilled == true) {
+				start = true;
+			}
+		}
 	}
 
 	public void setItem_1()
@@ -63,4 +77,37 @@ public class BedScript : MonoBehaviour {
 		print ("PlayerBed placed here:" + this.gameObject.name);
 	}
 
+	public void getInBed ()
+	{
+		bedFilled = true;
+		print ("In Bed");
+	}
+
+	public void getOutBed()
+	{
+		bedFilled = false;
+		print("Got out of bed");
+	}
+
+	public int getItem()
+	{
+		if (item_1) {
+			item_1 = false;
+			print ("Item Found");
+			return 1;
+		} else if (item_2) {
+			item_2 = false;
+			print ("Item Found");
+			return 2;
+		} else if (item_3) {
+			item_3 = false;
+			print ("Item Found");
+			return 3;
+		} else if (item_4) {
+			item_4 = false;
+			print ("Item Found");
+			return 4;
+		}
+		return 0;
+	}
 }
